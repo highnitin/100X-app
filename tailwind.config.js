@@ -46,9 +46,21 @@ module.exports = {
       },
       width:{
         "37-rem":"37.375rem",
+        "28-rem":"28.4375rem",
+      },
+      height:{
+        "1px":"1px",
+        "12-rem":"12.4375rem",
       },
       borderWidth:{
         "twitter-3.5":"3.5rem",
+      },
+      gap:{
+        "2px":"2px",
+      },
+      padding:{
+        "236px":"236px",
+        "161.9":"161.936px"
       },
     },
   },
