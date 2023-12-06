@@ -42,7 +42,7 @@ module.exports = {
         "twitter-more-rounded":"624.9375rem",
       },
       fontFamily:{
-        "inter":'Inter'
+        "inter":['Inter', 'sans-serif'],
       },
       width:{
         "37-rem":"37.375rem",

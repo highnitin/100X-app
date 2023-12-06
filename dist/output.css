@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@200;400;500&display=swap');
 
 /*
-! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.6 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -123,8 +123,10 @@ strong {
 }
 
 /*
-1. Use the user's configured `mono` font family by default.
-2. Correct the odd `em` font sizing in all browsers.
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
 */
 
 code,
@@ -133,8 +135,12 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
-  font-size: 1em;
+  font-feature-settings: normal;
   /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
 }
 
 /*
@@ -574,10 +580,6 @@ video {
   display: none;
 }
 
-.h-12-rem{
-  height: 12.4375rem;
-}
-
 .h-14{
   height: 3.5rem;
 }
@@ -586,32 +588,32 @@ video {
   height: 1px;
 }
 
-.h-36{
-  height: 9rem;
-}
-
 .h-6{
   height: 1.5rem;
+}
+
+.h-screen{
+  height: 100vh;
+}
+
+.w-10{
+  width: 2.5rem;
 }
 
 .w-24{
   width: 6rem;
 }
 
-.w-28-rem{
-  width: 28.4375rem;
+.w-3{
+  width: 0.75rem;
 }
 
-.w-32{
-  width: 8rem;
+.w-36{
+  width: 9rem;
 }
 
 .w-37-rem{
   width: 37.375rem;
-}
-
-.w-44{
-  width: 11rem;
 }
 
 .w-6{
@@ -627,6 +629,10 @@ video {
 }
 
 .flex-shrink-0{
+  flex-shrink: 0;
+}
+
+.shrink-0{
   flex-shrink: 0;
 }
 
@@ -682,12 +688,12 @@ video {
   gap: 6rem;
 }
 
-.gap-2px{
-  gap: 2px;
-}
-
 .gap-3{
   gap: 0.75rem;
+}
+
+.gap-32{
+  gap: 8rem;
 }
 
 .gap-4{
@@ -696,6 +702,10 @@ video {
 
 .gap-40{
   gap: 10rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
 }
 
 .space-x-10 > :not([hidden]) ~ :not([hidden]){
@@ -798,10 +808,6 @@ video {
   padding: 1rem;
 }
 
-.p-40{
-  padding: 10rem;
-}
-
 .p-5{
   padding: 1.25rem;
 }
@@ -891,17 +897,12 @@ video {
 }
 
 .font-inter{
-  font-family: Inter;
+  font-family: Inter, sans-serif;
 }
 
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-base{
@@ -917,11 +918,6 @@ video {
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .font-bold{
@@ -1018,4 +1014,97 @@ video {
 
 .group:hover .group-hover\:hidden{
   display: none;
+}
+
+@media (min-width: 768px){
+  .md\:visible{
+    visibility: visible;
+  }
+
+  .md\:flex{
+    display: flex;
+  }
+
+  .md\:h-12-rem{
+    height: 12.4375rem;
+  }
+
+  .md\:h-36{
+    height: 9rem;
+  }
+
+  .md\:w-28-rem{
+    width: 28.4375rem;
+  }
+
+  .md\:w-32{
+    width: 8rem;
+  }
+
+  .md\:w-44{
+    width: 11rem;
+  }
+
+  .md\:w-80{
+    width: 20rem;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:items-end{
+    align-items: flex-end;
+  }
+
+  .md\:items-center{
+    align-items: center;
+  }
+
+  .md\:gap-2px{
+    gap: 2px;
+  }
+
+  .md\:p-40{
+    padding: 10rem;
+  }
+
+  .md\:align-middle{
+    vertical-align: middle;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:font-bold{
+    font-weight: 700;
+  }
+
+  .md\:text-neutral-50{
+    --tw-text-opacity: 1;
+    color: rgb(250 250 250 / var(--tw-text-opacity));
+  }
+
+  .md\:backdrop-blur-xl{
+    --tw-backdrop-blur: blur(24px);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+            backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  }
 }

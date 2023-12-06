@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../dist/output.css" rel="stylesheet">
-    <title>Layout - 100X app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="../../dist/output.css" rel="stylesheet">
+    <title>Layouts</title>
 </head>
-<body class="bg-black text-white">
-        <nav class="mb-6 p-4 flex justify-between align-middle border-b-2 border-twitter-button-stroke">
-        <span class="flex text-lg font-bold align-middle content-center items-center"><a href="#">100X App</a></span>
-        <span class="flex">
+<body class="bg-black text-white font-inter">
+    <nav class="p-4 flex justify-between align-middle border-b-2 border-twitter-button-stroke">
+        <span class="flex text-lg font-bold align-middle content-center items-center"><a href="../index.html">100X App</a></span>
+        <span class="hidden md:flex md:visible">
         <ul class="flex justify-center align-middle content-center items-center space-x-10 mx-2">
-            <li class="hover:border-b-2 border-gray-400"><a href="index.html">Home</a></li>
-            <li class="hover:border-b-2 border-gray-400"><a href="#">About Me</a></li>
-            <li class="hover:border-b-2 border-gray-400"><a href="#">Connect</a></li>
+            <li class="hover:border-b-2 border-gray-400"><a href="#">Home</a></li>
+            <li class="hover:border-b-2 border-gray-400"><a href="http://linkedin.com/in/highnitin" target="_blank">About Me</a></li>
+            <li class="hover:border-b-2 border-gray-400"><a href="http://linkedin.com/in/highnitin" target="_blank">Connect</a></li>
                 </ul></span>
         <span class="flex justify-center items-center content-center">
             <a href="http://linkedin.com/in/highnitin" target="_blank">
@@ -23,34 +26,34 @@
             </a>
         </span>
     </nav>
-    <main class="p-40 flex justify-center items-center align-middle">
-        <section id="loginScreen" class="flex flex-row items-center gap-24">
-            <section id="leftScreen" class=" flex flex-row justify-center items-end gap-2px">
-                      <img src="../public/images/100.svg"  alt="" class="w-28-rem h-12-rem">
-                      <img src="../public/images/x.svg"  alt="" class="w-32 h-36">
+    <main class="flex justify-center md:items-center md:align-middle md:p-40 h-screen shrink-0">
+        <section id="loginScreen" class="flex flex-col md:flex-row md:items-center gap-24">
+            <section id="leftScreen" class="flex flex-row px-4 py-3 justify-center items-center gap-32 md:items-end md:gap-2px">
+                <section id="innerContainer" class="flex justify-center items-end gap-1">
+                    <img src="../public/images/100.svg"  alt="" class="w-10 md:w-28-rem md:h-12-rem">
+                    <img src="../public/images/x.svg"  alt="" class="w-3 md:w-32 md:h-36">
+                </section>
             </section>
             <section id="rightScreen" class="flex py-0 px-7 flex-col items-start gap-10">
-                <section class="flex flex-col items-start gap-3">
-                    <h1 class="text-5xl font-bold text-neutral-50 ">Happening now</h1>
-                    <h2 class="text-2xl font-bold text-neutral-50">Join today.</h2>
+                <section class="flex flex-col items-start gap-3 self-stretch">
+                    <h1 class="text-3xl md:text-5xl font-bold md:text-neutral-50 ">Happening now</h1>
+                    <h2 class="text-base font-medium md:text-2xl md:font-bold md:text-neutral-50">Join today.</h2>
                 </section>
-                <button class="w-80 py-2 px-6 bg-twitter-neutral-50 backdrop-blur-xl shadow-twitter-button-shadow rounded-twitter-rounded text-base font-inter font-bold text-black hover:bg-twitter-neutral-200">Create account
-                </button>
+                <a href="../src/index.html" class="flex justify-center items-center gap-3 self-stretch md:w-80 py-2 px-6 bg-twitter-neutral-50 md:backdrop-blur-xl shadow-twitter-button-shadow rounded-twitter-rounded md:text-base font-bold text-black hover:bg-twitter-neutral-200">
+                Create account
+            </a>
                 <section class="flex justify-center items-center gap-1 self-stretch">
-                    <hr class="w-44 h-1px bg-neutral-700">
+                    <hr class="w-36 md:w-44 h-1px bg-neutral-700">
                     <span class="text-center text-base font-normal text-twitter-neutral-50">or</span>
-                    <hr class="w-44 h-1px bg-neutral-700">
+                    <hr class="w-36 md:w-44 h-1px bg-neutral-700">
                 </section>
-                <h2 class="text-xl font-normal text-neutral-50">Already have an account?</h2>
-                <button class="w-80 py-2 px-6 border border-twitter-button-stroke backdrop-blur-xl shadow-twitter-button-shadow rounded-twitter-rounded text-base font-inter font-bold text-twitter-blue-default ">Sign up
-                </button>
+                <section class="flex flex-col items-start gap-5 self-stretch">
+                    <h2 class="text-base md:text-xl font-normal text-neutral-50">Already have an account?</h2>
+                        <a href="../src/index.html" class="flex justify-center items-center gap-3 self-stretch md:w-80 py-2 px-6 border border-twitter-button-stroke backdrop-blur-xl shadow-twitter-button-shadow rounded-twitter-rounded text-base font-inter font-bold text-twitter-blue-default">Sign up
+                        </a>
+                </section>
             </section>
         </section>
     </main> 
-      <footer class="p-5 mt-5 text-center border-t-2 border-twitter-button-stroke shadow-2xl shadow-twitter-blue-default">
-      <span class="pt-2">
-        🚀 Crafted with curiosity | HighNitin © 2023 ✨
-    </span>
-    </footer>
 </body>
 </html>
