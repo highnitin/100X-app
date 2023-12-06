@@ -18,7 +18,7 @@ The second stage involves building various input components that make up the 100
 
 The third stage of development is centered around creating cards that display content in an appealing and organized manner. These cards are designed to showcase user-generated content, adding a visually engaging element to the app.
 
-### 📦 Stage 4: Tweet Components
+### 📝 Stage 4: Tweet Components
 
 The fourth stage of development is centered around creating tweet components that display content in an organized manner. These components are designed to showcase user-generated content, adding a visually engaging element tweet elements to the app.
 
