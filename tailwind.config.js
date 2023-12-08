@@ -40,13 +40,16 @@ module.exports = {
         "twitter-rounded":"4.0625rem",
         "twitter-less-rounded":"1.875rem",
         "twitter-more-rounded":"624.9375rem",
+        "12-rem":"12rem",
       },
       fontFamily:{
         "inter":['Inter', 'sans-serif'],
       },
       width:{
         "37-rem":"37.375rem",
+        "30-rem":"30rem",
         "28-rem":"28.4375rem",
+        "27-rem":"27rem",
       },
       height:{
         "1px":"1px",
@@ -62,6 +65,7 @@ module.exports = {
         "236px":"236px",
         "161.9":"161.936px"
       },
+      borderColor: ['focus'],
     },
   },
   plugins: [],
