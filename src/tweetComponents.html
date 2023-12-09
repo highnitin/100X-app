@@ -9,7 +9,7 @@
     <link href="../dist/output.css" rel="stylesheet">
     <title>Tweet Components - 100X Blogging</title>
 </head>
-<body class="bg-black text-white font-inter">
+<body class="bg-black text-white font-inter p-3">
     <nav class="mb-6 p-4 flex justify-between align-middle border-b-2 border-twitter-button-stroke">
         <span class="flex text-lg font-bold align-middle content-center items-center"><a href="index.html">100X App</a></span>
         <span class="flex">
@@ -27,7 +27,50 @@
         </span>
     </nav>
     <main class=" flex justify-evenly">
-   
+        <section class="flex w-37-rem py-2 px-4 items-start gap-4 border-b border-b-neutral-700">
+            <img id="leftSide" src="../public/images/user-avatar.png" alt="" class="w-12 rounded-12-rem bg-twitter-searchbar-fill">
+            <section id="rightSide" class="flex flex-col items-start gap-2">
+                <section id="textArea" class="flex flex-col items-start gap-1 self-stretch">
+                    <section class="flex items-center gap-1 self-stretch">
+                        <section id="userInfo" class="flex items-center gap-2">
+                            <span class="font-inter text-base font-medium text-neutral-50">Name</span>
+                            <span class="font-inter text-base font-normal text-neutral-500">@handle • 10h</span>
+                        </section>
+                    </section>
+                    <span class="font-inter text-base font-normal text-neutral-50">Writing gets easier after the first sentence Lifting gets easier after the first set.People think and think and think until they finally decide to act. Their attention shifts from internal to external, and the difficulty they created in their mind vanishes.
+                    </span>
+                </section>
+                <section id="userAction" class="flex py-3 px-0 justify-between items-center self-stretch">
+                    <section id="comment" class="flex justify-center items-center gap-1 group">
+                        <img src="../public/images/comment-sv.svg" alt="" class="w-4  stroke-neutral-500" style="stroke-width: 1.5px;">
+                        <span class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300">11</span>
+                    
+                    </section>
+                    <section id="retweet" class="flex justify-center items-center gap-1 group">
+                        <img src="../public/images/retweet-black.svg" alt="" class="w-4  stroke-neutral-500 group-hover:hidden" style="stroke-width: 1.5px;">
+                        <img src="../public/images/retweet-sv.svg" alt="" class="w-4  stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300" style="stroke-width: 1.5px;">
+                        <span class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300">270</span>
+                    </section>
+                  
+                    <section id="like" class="flex justify-center items-center gap-1 group">
+                        <img src="../public/images/heart-black.svg" alt="" class="w-4  stroke-neutral-500 group-hover:hidden " style="stroke-width: 1.5px;">
+                        <img src="../public/images/heart-sv.svg" alt="" class="w-4  stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300" style="stroke-width: 1.5px;">
+                        <span class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300">1869</span>
+                    </section>
+                    <!-- transition-opacity duration-300 opacity-100 hover:opacity-0 -->
+                    <section id="analytics" class="flex justify-center items-center gap-1 group">
+                        <img src="../public/images/analytics.svg" alt="" class="w-4  stroke-neutral-500 group-hover:hidden" style="stroke-width: 1.5px;">
+                        <img src="../public/images/reach-sv.svg" alt="" class="w-4  stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300" style="stroke-width: 1.5px;">
+                        <span class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300">99.6k</span>
+                    </section>
+  
+                    <section id="share" class="flex justify-center items-center gap-1 group">
+                        <img src="../public/images/share-black.svg" alt="" class="w-4  stroke-neutral-500 group-hover:hidden transition-colors duration-300" style="stroke-width: 1.5px;">
+                        <img src="../public/images/share-sv.svg" alt="" class="w-4  stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300" style="stroke-width: 1.5px;">
+                    </section>
+                </section>
+            </section>
+        </section>
     </main>
 
     <footer class="p-5 mt-5 text-center border-t-2 border-twitter-button-stroke">
