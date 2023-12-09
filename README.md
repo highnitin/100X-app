@@ -6,7 +6,7 @@ Welcome to the 100x Blogging App project! This repository is dedicated to recrea
 
 The 100x Blogging App is a web application built with Tailwind CSS. The project consists of several key stages:
 
-### 🚀 Stage 1: Buttons Components
+### 🚀 Stage 1: Button Components
 
 In the initial stage of development, we focused on creating stylish and user-friendly buttons components that define the app's aesthetics. These buttons form an integral part of the app's interface and play a crucial role in user interactions.
 
